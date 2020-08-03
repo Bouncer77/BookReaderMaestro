@@ -11,18 +11,45 @@ import java.util.Map;
 
 public class Book {
 
+    String name;
+    String author;
+    String edition;
+    int lastPage;
 
-    /**
+    public Book(String name, String author, String edition, int lastPage) {
+        this.name = name;
+        this.author = author;
+        this.edition = edition;
+        this.lastPage = lastPage;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getEdition() {
+        return edition;
+    }
+
+    public int getLastPage() {
+        return lastPage;
+    }
+
+    /*
      * Словарь хранит: язык-имя
      * */
-    private Map<String, String> bookName = new HashMap<>();
+   /* private Map<String, String> bookName = new HashMap<>();
     private int edition;
     private Map<String, String> author = new HashMap<>();
     // private Map<String, List<String>> publishingHouse = new HashMap<>(); // издательство
     private int yearOfPublicationOfTheBook;
-    private int lastPage; // последняя страница
+    private int lastPage; // последняя страница*/
 
-    public Book(String locale, String bookName, String author) {
+   /* public Book(String locale, String bookName, String author) {
         this.bookName.put(locale, bookName);
         this.author.put(locale, author);
     }
@@ -31,9 +58,9 @@ public class Book {
         this.edition = edition;
     }
 
-   /* public void setPublishingHouse(String language, String publishingHouse) {
+   *//* public void setPublishingHouse(String language, String publishingHouse) {
         this.publishingHouse.put(language, );
-    }*/
+    }*//*
 
     public void setYearOfPublicationOfTheBook(int yearOfPublicationOfTheBook) {
         this.yearOfPublicationOfTheBook = yearOfPublicationOfTheBook;
@@ -86,5 +113,5 @@ public class Book {
         result = 31 * result + yearOfPublicationOfTheBook;
         result = 31 * result + lastPage;
         return result;
-    }
+    }*/
 }

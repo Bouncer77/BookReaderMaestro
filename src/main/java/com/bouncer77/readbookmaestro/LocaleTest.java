@@ -1,5 +1,7 @@
 package com.bouncer77.readbookmaestro;
 
+import com.bouncer77.readbookmaestro.Colour;
+
 import java.util.Locale;
 
 /**
