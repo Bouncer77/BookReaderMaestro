@@ -1,5 +1,6 @@
 package com.bouncer77.readbookmaestro;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -48,10 +49,9 @@ public class Main {
         );
 
         // immutable без пустых элементов (без null)
-        List<Book> sqlCourseList = List.of(
-                new Book("A Primer on SQL", "Batra", "3-е", 600),
-                new Book("SQL. Сборник рецептов", "Молинаро", "1-е", 500)
-        );
+        List<Book> sqlCourseList = new ArrayList<>();
+        sqlCourseList.add(new Book("A Primer on SQL", "Batra", "3-е", 600));
+        sqlCourseList.add(new Book("SQL. Сборник рецептов", "Молинаро", "1-е", 500));
 
         Course javaCourse = new Course("Базовая Java", javaCourseList);
         Course sqlCourse = new Course("Базовый SQL", sqlCourseList);
